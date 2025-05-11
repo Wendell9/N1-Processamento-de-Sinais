@@ -135,6 +135,14 @@ def analisar_sistema(equacao):
     
     return memoria, causal, invariancia
 
+#Vetor a ser analisado
+x = [0, -2, -1, 0, 1, 2, 3, 0, 0]
+#Ex1
+
+plot_sinal_discreto(x)
+#Ex2
+plot_transformacoes_discretas(x)
+
 # Exemplo de uso:
 equacao_usuario = input("Digite a equação do sistema (ex: y[n] = x[n] - x[n-2]): ")
 memoria, causalidade,invariancia = analisar_sistema(equacao_usuario)
